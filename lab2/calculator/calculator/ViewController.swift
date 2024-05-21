@@ -212,14 +212,15 @@ class ViewController: UIViewController {
     @IBAction func buttonZeroFunc(_ sender: UIButton) {
     }
     
-    
+//    .
     @IBAction func buttonDotFunc(_ sender: UIButton) {
     }
     @IBAction func buttonACFunc(_ sender: UIButton) {
     }
     
     
-    
+    @IBAction func buttonTest(_ sender: UIButton) {
+    }
     
     
     
