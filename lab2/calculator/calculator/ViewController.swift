@@ -124,106 +124,198 @@ class ViewController: UIViewController {
     
 // Outlets
 
-    
+//    0
     @IBOutlet weak var buttonZero: UIButton!
     
+//    1
     @IBOutlet weak var buttonOne: UIButton!
     
+//    AC
     @IBOutlet weak var buttonAC: UIButton!
     
+//    2
     @IBOutlet weak var buttonTwo: UIButton!
-        
+    
+//    3
     @IBOutlet weak var buttonThree: UIButton!
-
+    
+//    +/-
     @IBOutlet weak var buttonPlusMinus: UIButton!
     
+//    4
     @IBOutlet weak var buttonFour: UIButton!
     
+//    6
     @IBOutlet weak var buttonSix: UIButton!
     
+//    5
     @IBOutlet weak var buttonFive: UIButton!
     
+//    7
     @IBOutlet weak var buttonSeven: UIButton!
     
+//    8
     @IBOutlet weak var buttonEight: UIButton!
     
+//    9
     @IBOutlet weak var buttonNine: UIButton!
-
+    
+//x^2
     @IBOutlet weak var buttonXSquare: UIButton!
     
+//    /
     @IBOutlet weak var buttonDivide: UIButton!
     
+//    *
     @IBOutlet weak var buttonMultiply: UIButton!
     
+//    -
     @IBOutlet weak var buttonMinus: UIButton!
     
+//    +
     @IBOutlet weak var buttonPlus: UIButton!
     
+//    .
     @IBOutlet weak var buttonDot: UIButton!
     
-
+//    =
     @IBOutlet weak var buttonEqual: UIButton!
     
-    
+//    result
     @IBOutlet weak var result: UILabel!
     
+  
     
-// Actions
+    
+    
+    
+    
+// ACTIONS
+  
+    
+    
+
+//    txtFiled 1
     
     @IBAction func textField1Func(_ sender: UITextField) {
     }
+
     
+//    txtField 2
     
     @IBAction func textField2Func(_ sender: UITextField) {
     }
     
+    
+// x^2
+    
     @IBAction func buttonXSquareFunc(_ sender: UIButton) {
     }
+    
+    
+//    +/-
+    
     @IBAction func buttonPlusMinusFunc(_ sender: UIButton) {
     }
+    
+    
+//    /
+    
     @IBAction func buttonDivideFunc(_ sender: UIButton) {
     }
+    
+    
+//    7
+    
     @IBAction func buttonSevenFunc(_ sender: UIButton) {
     }
+    
+    
+//    8
     @IBAction func buttonEightFunc(_ sender: UIButton) {
     }
+    
+    
+//    9
     @IBAction func buttonNineFunc(_ sender: UIButton) {
     }
+    
+    
+//    *
+    
     @IBAction func buttonMultiplyFunc(_ sender: UIButton) {
     }
+    
+    
+//    4
+    
     @IBAction func buttonFourFunc(_ sender: UIButton) {
     }
+    
+    
+//    5
     @IBAction func buttonFiveFunc(_ sender: UIButton) {
     }
+    
+    
+//    6
+    
     @IBAction func buttonSixFunc(_ sender: UIButton) {
     }
+    
+    
+//    -
+    
     @IBAction func buttonMinusFunc(_ sender: UIButton) {
     }
+    
+    
+//    1
+    
     @IBAction func buttonOneFunc(_ sender: UIButton) {
     }
+    
+    
+//    2
+    
     @IBAction func buttonTwoFunc(_ sender: UIButton) {
     }
+    
+    
+//    3
+    
     @IBAction func buttonThreeFunc(_ sender: UIButton) {
     }
+    
+    
+//    +
+    
     @IBAction func buttonPlusFunc(_ sender: UIButton) {
     }
     
     
+//    0
+    
     @IBAction func buttonZeroFunc(_ sender: UIButton) {
     }
     
+
 //    .
+    
     @IBAction func buttonDotFunc(_ sender: UIButton) {
     }
+    
+    
+//    AC
+    
     @IBAction func buttonACFunc(_ sender: UIButton) {
     }
     
     
-    @IBAction func buttonTest(_ sender: UIButton) {
+//    =
+    
+    @IBAction func buttonEqualFunc(_ sender: UIButton) {
     }
-    
-    
-    
     
 }
 

@@ -322,6 +322,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonEqualFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FdD-JY-yK7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqb-ft-yxW">
                                 <rect key="frame" x="294" y="672" width="69" height="69"/>
