@@ -14,60 +14,60 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
    
 // 0
-        button0.layer.cornerRadius = 12
-        button0.layer.borderWidth = 1
-        button0.layer.borderColor = UIColor.white.cgColor
+        buttonZero.layer.cornerRadius = 12
+        buttonZero.layer.borderWidth = 1
+        buttonZero.layer.borderColor = UIColor.white.cgColor
     
 // 1
-        button1.layer.cornerRadius = 12
-        button1.layer.borderWidth = 1
-        button1.layer.borderColor = UIColor.white.cgColor
+        buttonOne.layer.cornerRadius = 12
+        buttonOne.layer.borderWidth = 1
+        buttonOne.layer.borderColor = UIColor.white.cgColor
         
 // 2
-        button2.layer.cornerRadius = 12
-        button2.layer.borderWidth = 1
-        button2.layer.borderColor = UIColor.white.cgColor
+        buttonTwo.layer.cornerRadius = 12
+        buttonTwo.layer.borderWidth = 1
+        buttonTwo.layer.borderColor = UIColor.white.cgColor
         
         
 // 3
-        button3.layer.cornerRadius = 12
-        button3.layer.borderWidth = 1
-        button3.layer.borderColor = UIColor.white.cgColor
+        buttonThree.layer.cornerRadius = 12
+        buttonThree.layer.borderWidth = 1
+        buttonThree.layer.borderColor = UIColor.white.cgColor
         
         
 // 4
-        button4.layer.cornerRadius = 12
-        button4.layer.borderWidth = 1
-        button4.layer.borderColor = UIColor.white.cgColor
+        buttonFour.layer.cornerRadius = 12
+        buttonFour.layer.borderWidth = 1
+        buttonFour.layer.borderColor = UIColor.white.cgColor
         
         
 // 5
-        button5.layer.cornerRadius = 12
-        button5.layer.borderWidth = 1
-        button5.layer.borderColor = UIColor.white.cgColor
+        buttonFive.layer.cornerRadius = 12
+        buttonFive.layer.borderWidth = 1
+        buttonFive.layer.borderColor = UIColor.white.cgColor
         
         
 // 6
-        button6.layer.cornerRadius = 12
-        button6.layer.borderWidth = 1
-        button6.layer.borderColor = UIColor.white.cgColor
+        buttonSix.layer.cornerRadius = 12
+        buttonSix.layer.borderWidth = 1
+        buttonSix.layer.borderColor = UIColor.white.cgColor
         
 // 7
-        button7.layer.cornerRadius = 12
-        button7.layer.borderWidth = 1
-        button7.layer.borderColor = UIColor.white.cgColor
+        buttonSeven.layer.cornerRadius = 12
+        buttonSeven.layer.borderWidth = 1
+        buttonSeven.layer.borderColor = UIColor.white.cgColor
         
         
 // 8
-        button8.layer.cornerRadius = 12
-        button8.layer.borderWidth = 1
-        button8.layer.borderColor = UIColor.white.cgColor
+        buttonEight.layer.cornerRadius = 12
+        buttonEight.layer.borderWidth = 1
+        buttonEight.layer.borderColor = UIColor.white.cgColor
         
         
 // 9
-        button9.layer.cornerRadius = 12
-        button9.layer.borderWidth = 1
-        button9.layer.borderColor = UIColor.white.cgColor
+        buttonNine.layer.cornerRadius = 12
+        buttonNine.layer.borderWidth = 1
+        buttonNine.layer.borderColor = UIColor.white.cgColor
         buttonAC.layer.cornerRadius = 12
         buttonAC.layer.borderWidth = 1
         
@@ -125,30 +125,30 @@ class ViewController: UIViewController {
 // Outlets
 
     
-    @IBOutlet weak var button0: UIButton!
+    @IBOutlet weak var buttonZero: UIButton!
     
-    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var buttonOne: UIButton!
     
     @IBOutlet weak var buttonAC: UIButton!
     
-    @IBOutlet weak var button2: UIButton!
-    
+    @IBOutlet weak var buttonTwo: UIButton!
+        
+    @IBOutlet weak var buttonThree: UIButton!
+
     @IBOutlet weak var buttonPlusMinus: UIButton!
-    @IBOutlet weak var button4: UIButton!
     
-    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var buttonFour: UIButton!
     
+    @IBOutlet weak var buttonSix: UIButton!
     
-    @IBOutlet weak var button6: UIButton!
+    @IBOutlet weak var buttonFive: UIButton!
     
-    @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var buttonSeven: UIButton!
     
-    @IBOutlet weak var button7: UIButton!
+    @IBOutlet weak var buttonEight: UIButton!
     
-    @IBOutlet weak var button8: UIButton!
-    
-    @IBOutlet weak var button9: UIButton!
-    
+    @IBOutlet weak var buttonNine: UIButton!
+
     @IBOutlet weak var buttonXSquare: UIButton!
     
     @IBOutlet weak var buttonDivide: UIButton!
@@ -161,6 +161,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonDot: UIButton!
     
+
+    @IBOutlet weak var buttonEqual: UIButton!
+    
+    
+    @IBOutlet weak var result: UILabel!
     
     
 // Actions
@@ -172,36 +177,33 @@ class ViewController: UIViewController {
     @IBAction func textField2Func(_ sender: UITextField) {
     }
     
-    @IBOutlet weak var result: UILabel!
-    
-    
     @IBAction func buttonXSquareFunc(_ sender: UIButton) {
     }
     @IBAction func buttonPlusMinusFunc(_ sender: UIButton) {
     }
     @IBAction func buttonDivideFunc(_ sender: UIButton) {
     }
-    @IBAction func button7Func(_ sender: UIButton) {
+    @IBAction func buttonSevenFunc(_ sender: UIButton) {
     }
-    @IBAction func button8Func(_ sender: UIButton) {
+    @IBAction func buttonEightFunc(_ sender: UIButton) {
     }
-    @IBAction func button9Func(_ sender: UIButton) {
+    @IBAction func buttonNineFunc(_ sender: UIButton) {
     }
     @IBAction func buttonMultiplyFunc(_ sender: UIButton) {
     }
-    @IBAction func button4Func(_ sender: UIButton) {
+    @IBAction func buttonFourFunc(_ sender: UIButton) {
     }
-    @IBAction func button5Func(_ sender: UIButton) {
+    @IBAction func buttonFiveFunc(_ sender: UIButton) {
     }
-    @IBAction func button6Func(_ sender: UIButton) {
+    @IBAction func buttonSixFunc(_ sender: UIButton) {
     }
     @IBAction func buttonMinusFunc(_ sender: UIButton) {
     }
-    @IBAction func button1Func(_ sender: UIButton) {
+    @IBAction func buttonOneFunc(_ sender: UIButton) {
     }
-    @IBAction func button2Func(_ sender: UIButton) {
+    @IBAction func buttonTwoFunc(_ sender: UIButton) {
     }
-    @IBAction func button3Func(_ sender: UIButton) {
+    @IBAction func buttonThreeFunc(_ sender: UIButton) {
     }
     @IBAction func buttonPlusFunc(_ sender: UIButton) {
     }

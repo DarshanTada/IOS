@@ -213,7 +213,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonZeroFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fct-YX-C9R"/>
+                                    <action selector="buttonZeroFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9k-Ym-YeM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBz-er-Bbj">
@@ -450,25 +450,26 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button0" destination="bfe-5N-Aah" id="Gz5-kg-HRt"/>
-                        <outlet property="button1" destination="3Mg-Ej-adL" id="O0r-Br-Qdm"/>
-                        <outlet property="button2" destination="NeN-U0-uDA" id="oHt-bo-aQZ"/>
-                        <outlet property="button3" destination="oHv-db-ePZ" id="mmo-aQ-tEa"/>
-                        <outlet property="button4" destination="sKS-dj-pZj" id="uiY-yb-7ro"/>
-                        <outlet property="button5" destination="5Tn-q6-BhJ" id="cmz-1B-75Z"/>
-                        <outlet property="button6" destination="jsg-h3-zvJ" id="YDs-wc-QFH"/>
-                        <outlet property="button7" destination="xna-Z4-43p" id="kbe-4R-UEA"/>
-                        <outlet property="button8" destination="aWh-Nv-l7b" id="ZUi-Vm-ThB"/>
-                        <outlet property="button9" destination="kIY-yd-QTM" id="pEy-yV-JgF"/>
                         <outlet property="buttonAC" destination="3vp-QO-rxN" id="W9Y-zo-Uaa"/>
                         <outlet property="buttonDivide" destination="ZmS-uW-p4B" id="8Lg-Yt-Lp6"/>
                         <outlet property="buttonDot" destination="OBz-er-Bbj" id="m0c-qJ-c2i"/>
+                        <outlet property="buttonEight" destination="aWh-Nv-l7b" id="tPI-fL-Pfy"/>
+                        <outlet property="buttonEqual" destination="7Fl-up-5Mr" id="OYq-Iq-fnR"/>
+                        <outlet property="buttonFive" destination="5Tn-q6-BhJ" id="Ghz-r7-NvX"/>
+                        <outlet property="buttonFour" destination="sKS-dj-pZj" id="fXI-70-cd5"/>
                         <outlet property="buttonMinus" destination="VWH-tq-Ict" id="EZ6-e0-Pps"/>
                         <outlet property="buttonMultiply" destination="jCr-uB-mB3" id="XjK-xU-dDw"/>
+                        <outlet property="buttonNine" destination="kIY-yd-QTM" id="iTn-nL-UVl"/>
+                        <outlet property="buttonOne" destination="3Mg-Ej-adL" id="KTN-xd-lhX"/>
                         <outlet property="buttonPlus" destination="Rqb-ft-yxW" id="BjK-Oa-V8e"/>
                         <outlet property="buttonPlusMinus" destination="62a-zp-nx6" id="B6K-IK-UGY"/>
+                        <outlet property="buttonSeven" destination="xna-Z4-43p" id="R5i-aT-Uh7"/>
+                        <outlet property="buttonSix" destination="jsg-h3-zvJ" id="WJn-Yk-ys2"/>
+                        <outlet property="buttonThree" destination="oHv-db-ePZ" id="Uud-Xx-6Ej"/>
+                        <outlet property="buttonTwo" destination="NeN-U0-uDA" id="QlR-kd-ohe"/>
                         <outlet property="buttonXSquare" destination="OC9-eQ-ceM" id="6h2-cJ-FTH"/>
-                        <outlet property="result" destination="lXv-Li-sAA" id="yLd-ZY-otY"/>
+                        <outlet property="buttonZero" destination="bfe-5N-Aah" id="x7Q-0E-7pT"/>
+                        <outlet property="result" destination="lXv-Li-sAA" id="wb6-kk-Z4i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
