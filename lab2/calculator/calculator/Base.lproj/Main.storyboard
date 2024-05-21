@@ -16,16 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lps-Td-oTc">
-                                <rect key="frame" x="141" y="99" width="129" height="31.333333333333343"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="TFb-Qc-T2G"/>
-                                    <constraint firstAttribute="height" constant="31.329999999999998" id="oGv-ei-rnm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter number 1" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-R4-p2O">
                                 <rect key="frame" x="29" y="156" width="338" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,7 +143,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button7Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiA-OR-v3b"/>
+                                    <action selector="buttonSevenFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VjU-LV-QNo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWh-Nv-l7b">
@@ -168,7 +158,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button8Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4TP-tN-Adf"/>
+                                    <action selector="buttonEightFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hos-Li-oAp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIY-yd-QTM">
@@ -183,7 +173,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button9Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYq-zZ-jE3"/>
+                                    <action selector="buttonNineFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C04-22-2AI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKS-dj-pZj">
@@ -198,7 +188,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button4Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TxC-NC-dpR"/>
+                                    <action selector="buttonFourFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJ6-FQ-TLl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfe-5N-Aah">
@@ -213,7 +203,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="buttonZeroFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K9k-Ym-YeM"/>
+                                    <action selector="buttonZeroFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqo-pN-XpG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBz-er-Bbj">
@@ -225,7 +215,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=".">
-                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonDotFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MBp-1l-6KT"/>
@@ -243,7 +233,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button1Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="os4-d0-lwD"/>
+                                    <action selector="buttonOneFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LpJ-xH-TsO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeN-U0-uDA">
@@ -258,7 +248,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button2Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZI-BG-nkc"/>
+                                    <action selector="buttonTwoFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dqe-UR-2CD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHv-db-ePZ">
@@ -273,7 +263,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button3Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SK6-9e-R5Y"/>
+                                    <action selector="buttonThreeFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBz-w9-Mxz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmS-uW-p4B">
@@ -353,7 +343,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button5Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQT-yY-MLP"/>
+                                    <action selector="buttonFiveFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBC-v3-mnG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsg-h3-zvJ">
@@ -368,7 +358,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button6Func:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qGq-bI-d2H"/>
+                                    <action selector="buttonSixFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyu-cs-qIr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWH-tq-Ict">
@@ -385,12 +375,22 @@
                                     <action selector="buttonMinusFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wci-ao-Ne4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lps-Td-oTc">
+                                <rect key="frame" x="141" y="82" width="129" height="31.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="TFb-Qc-T2G"/>
+                                    <constraint firstAttribute="height" constant="31.329999999999998" id="oGv-ei-rnm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OBz-er-Bbj" firstAttribute="leading" secondItem="bfe-5N-Aah" secondAttribute="trailing" constant="18" id="1R4-Fl-8Nk"/>
-                            <constraint firstItem="Lps-Td-oTc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="1xN-jt-L9W"/>
+                            <constraint firstItem="Lps-Td-oTc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="1xN-jt-L9W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lps-Td-oTc" secondAttribute="trailing" constant="123" id="6RZ-a7-Vla"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZmS-uW-p4B" secondAttribute="trailing" constant="30" id="71C-YL-tWD"/>
                             <constraint firstItem="lXv-Li-sAA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Cy-2x-UA2"/>
@@ -432,7 +432,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lXv-Li-sAA" secondAttribute="trailing" constant="27" id="k7O-O5-U1f"/>
                             <constraint firstItem="jsg-h3-zvJ" firstAttribute="leading" secondItem="5Tn-q6-BhJ" secondAttribute="trailing" constant="18" id="kfR-wS-W11"/>
                             <constraint firstItem="aWh-Nv-l7b" firstAttribute="leading" secondItem="xna-Z4-43p" secondAttribute="trailing" constant="18" id="l7u-83-Rji"/>
-                            <constraint firstItem="pwt-R4-p2O" firstAttribute="top" secondItem="Lps-Td-oTc" secondAttribute="bottom" constant="25.666666666666657" id="lbT-rr-8gw"/>
+                            <constraint firstItem="pwt-R4-p2O" firstAttribute="top" secondItem="Lps-Td-oTc" secondAttribute="bottom" constant="42.666666666666657" id="lbT-rr-8gw"/>
                             <constraint firstItem="pwt-R4-p2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="mNz-1t-ydp"/>
                             <constraint firstItem="jsg-h3-zvJ" firstAttribute="top" secondItem="kIY-yd-QTM" secondAttribute="bottom" constant="15" id="nVB-FQ-7Lx"/>
                             <constraint firstItem="NeN-U0-uDA" firstAttribute="leading" secondItem="3Mg-Ej-adL" secondAttribute="trailing" constant="18" id="pIj-TJ-O8K"/>
@@ -441,7 +441,7 @@
                             <constraint firstItem="5Tn-q6-BhJ" firstAttribute="leading" secondItem="sKS-dj-pZj" secondAttribute="trailing" constant="18" id="tlZ-Ok-TBo"/>
                             <constraint firstItem="3Mg-Ej-adL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="trw-nM-PIX"/>
                             <constraint firstItem="xna-Z4-43p" firstAttribute="top" secondItem="3vp-QO-rxN" secondAttribute="bottom" constant="15" id="u8d-ZF-PR7"/>
-                            <constraint firstItem="Lps-Td-oTc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="uMt-qG-OG4"/>
+                            <constraint firstItem="Lps-Td-oTc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="uMt-qG-OG4"/>
                             <constraint firstItem="SiS-mf-WRR" firstAttribute="top" secondItem="pwt-R4-p2O" secondAttribute="bottom" constant="20" id="uV1-GJ-Haz"/>
                             <constraint firstItem="xna-Z4-43p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="vKJ-Ui-pyJ"/>
                             <constraint firstItem="aWh-Nv-l7b" firstAttribute="top" secondItem="62a-zp-nx6" secondAttribute="bottom" constant="15" id="vW5-ai-HaB"/>

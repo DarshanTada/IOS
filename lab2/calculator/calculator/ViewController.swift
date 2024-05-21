@@ -112,7 +112,7 @@ class ViewController: UIViewController {
 // .
         buttonDot.layer.cornerRadius = 12
         buttonDot.layer.borderWidth = 1
-        buttonDot.layer.borderColor = UIColor.orange.cgColor
+        buttonDot.layer.borderColor = UIColor.white.cgColor
 
         
         
@@ -198,123 +198,144 @@ class ViewController: UIViewController {
 //    txtFiled 1
     
     @IBAction func textField1Func(_ sender: UITextField) {
+        
     }
 
     
 //    txtField 2
     
     @IBAction func textField2Func(_ sender: UITextField) {
+        
     }
     
     
 // x^2
     
     @IBAction func buttonXSquareFunc(_ sender: UIButton) {
+        print("x^2")
     }
     
     
 //    +/-
     
     @IBAction func buttonPlusMinusFunc(_ sender: UIButton) {
+        print("+/-")
     }
     
     
 //    /
     
     @IBAction func buttonDivideFunc(_ sender: UIButton) {
+        print("/")
     }
     
     
 //    7
     
     @IBAction func buttonSevenFunc(_ sender: UIButton) {
+        print("7")
     }
     
     
 //    8
     @IBAction func buttonEightFunc(_ sender: UIButton) {
+        print("8")
     }
     
     
 //    9
     @IBAction func buttonNineFunc(_ sender: UIButton) {
+        print("9")
     }
     
     
 //    *
     
     @IBAction func buttonMultiplyFunc(_ sender: UIButton) {
+        print("*")
     }
     
     
 //    4
     
     @IBAction func buttonFourFunc(_ sender: UIButton) {
+        print("4")
     }
     
     
 //    5
     @IBAction func buttonFiveFunc(_ sender: UIButton) {
+        print("5")
     }
     
     
 //    6
     
     @IBAction func buttonSixFunc(_ sender: UIButton) {
+        print("6")
     }
     
     
 //    -
     
     @IBAction func buttonMinusFunc(_ sender: UIButton) {
+        print("-")
     }
     
     
 //    1
     
     @IBAction func buttonOneFunc(_ sender: UIButton) {
+        print("1")
     }
     
     
 //    2
     
     @IBAction func buttonTwoFunc(_ sender: UIButton) {
+        print("2")
     }
     
     
 //    3
     
     @IBAction func buttonThreeFunc(_ sender: UIButton) {
+        print("3")
     }
     
     
 //    +
     
     @IBAction func buttonPlusFunc(_ sender: UIButton) {
+        print("+")
     }
     
     
 //    0
     
     @IBAction func buttonZeroFunc(_ sender: UIButton) {
+        print("0")
     }
     
 
 //    .
     
     @IBAction func buttonDotFunc(_ sender: UIButton) {
+        print(".")
     }
     
     
 //    AC
     
     @IBAction func buttonACFunc(_ sender: UIButton) {
+        print("AC")
     }
     
     
 //    =
     
     @IBAction func buttonEqualFunc(_ sender: UIButton) {
+        print("=")
     }
     
 }
