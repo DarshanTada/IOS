@@ -23,7 +23,7 @@
 
 // Question 2 :-
 
-    // Calculating total scores and average scores of three subjects
+
         func calculateScores() -> (totalScore: Int, averageScore: Double) {
             let totalScore = mathScore + scienceScore + englishScore
             let averageScore = Double(totalScore) / 3.0
@@ -37,16 +37,16 @@
 
 
 
-    // a. Create an array to hold the names of all the students in the class (studentNames)
+    // a.
         var studentNames = [String]()
 
-    // b. Write a function addStudent to add a name to the array and increment the number of students
+    // b.
         func addStudent(name: String) {
             studentNames.append(name)
             currentNumberOfStudents += 1
         }
 
-    // c. Add names of at least five students using this function
+    // c.
         addStudent(name: "Darshan")
         addStudent(name: "Keval")
         addStudent(name: "Sakshi")
@@ -58,7 +58,7 @@
 // Question 4 :-
 
 
-    // a. Use a for loop in three different ways to print the names of all the students in the array.
+    // a.
        
         // 1st way -->
             print("1st way :-")
@@ -79,7 +79,7 @@
                 print("         \(name) is on index \(index)")
             }
 
-    // b. Use a for loop to print the names of all the students in reverse order
+    // b.
             print("\nNames in reverse order:")
             for i in (0..<studentNames.count).reversed() {
                 print("                     \(studentNames[i])")
@@ -90,7 +90,7 @@
 // Question 5 :-
 
 
-    // Check if the current number of students is less than the maximum allowed
+    
             // currentNumberOfStudents = 30
             if currentNumberOfStudents < maxStudents {
                 print("\nMore students can be added")
@@ -103,7 +103,7 @@
 // Question 6 :-
     
 
-    // a. Create a variable for each of the 5 student's attendance percentage (attendancePercentage).
+    // a.
        
         var student1Atendance : Double
         var student2Atendance : Double
@@ -111,7 +111,7 @@
         var student4Atendance : Double
         var student5Atendance : Double
 
-    // b. Assign values to each student
+    // b.
 
         student1Atendance = 90
         student2Atendance = 85
@@ -119,7 +119,7 @@
         student4Atendance = 20
         student5Atendance = 35
 
-    // c. Use a compound if-else statement to categorize attendance
+    // c.
 
         func categorizeAttendance(attendance: Double) -> String {
             if attendance >= 90 {
@@ -147,12 +147,12 @@
 
 
 
-    // a. Usage of while loop to simulate adding students to the class until it is full
+    // a.
             currentNumberOfStudents = 0
             while currentNumberOfStudents < maxStudents {
                 addStudent(name: "New Student")
     
-    // b. Incrementing the number and printing the current number of students after each addition
+    // b.
                 print("Total number of students after addition are : \(currentNumberOfStudents)")
             }
 
@@ -167,7 +167,7 @@
 
     
     
-    // a. Use of repeat-while loop to simulate removing students from the class until it is down to the 5 original students
+    // a.
         repeat {
             studentNames.removeLast()
             currentNumberOfStudents -= 1
@@ -310,7 +310,7 @@
 // Question 14 :-
 
 
-    // a: Create an optional variable for the student's nickname
+    // a:
         var studentNickname: String? = "Ally"
         
     // b.
@@ -320,4 +320,3 @@
             print("No nickname")
         }
         
-
