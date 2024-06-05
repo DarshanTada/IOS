@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		796FD8E72C0EB5E200589FE7 /* lab4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FD8E72C0EB5E200589FE7 /* AutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796FD8EA2C0EB5E200589FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		796FD8EC2C0EB5E200589FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		796FD8EE2C0EB5E200589FE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		796FD8E82C0EB5E200589FE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				796FD8E72C0EB5E200589FE7 /* lab4.app */,
+				796FD8E72C0EB5E200589FE7 /* AutoLayout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		796FD8E62C0EB5E200589FE7 /* lab4 */ = {
+		796FD8E62C0EB5E200589FE7 /* AutoLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 796FD8FB2C0EB5E400589FE7 /* Build configuration list for PBXNativeTarget "lab4" */;
+			buildConfigurationList = 796FD8FB2C0EB5E400589FE7 /* Build configuration list for PBXNativeTarget "AutoLayout" */;
 			buildPhases = (
 				796FD8E32C0EB5E200589FE7 /* Sources */,
 				796FD8E42C0EB5E200589FE7 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = lab4;
+			name = AutoLayout;
 			productName = lab4;
-			productReference = 796FD8E72C0EB5E200589FE7 /* lab4.app */;
+			productReference = 796FD8E72C0EB5E200589FE7 /* AutoLayout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 796FD8E22C0EB5E200589FE7 /* Build configuration list for PBXProject "lab4" */;
+			buildConfigurationList = 796FD8E22C0EB5E200589FE7 /* Build configuration list for PBXProject "AutoLayout" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				796FD8E62C0EB5E200589FE7 /* lab4 */,
+				796FD8E62C0EB5E200589FE7 /* AutoLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -343,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		796FD8E22C0EB5E200589FE7 /* Build configuration list for PBXProject "lab4" */ = {
+		796FD8E22C0EB5E200589FE7 /* Build configuration list for PBXProject "AutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				796FD8F92C0EB5E400589FE7 /* Debug */,
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		796FD8FB2C0EB5E400589FE7 /* Build configuration list for PBXNativeTarget "lab4" */ = {
+		796FD8FB2C0EB5E400589FE7 /* Build configuration list for PBXNativeTarget "AutoLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				796FD8FC2C0EB5E400589FE7 /* Debug */,
