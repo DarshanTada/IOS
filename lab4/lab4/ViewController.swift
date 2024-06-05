@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         [firstNameText, surnameText, addressText, cityText, dateOfBirthText].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
     }
     
+    		
+    @IBAction func dismissKeyboard(_sender: UITapGestureRecognizer) {
+        firstNameText.resignFirstResponder()
+        surnameText.resignFirstResponder()
+        addressText.resignFirstResponder()
+        cityText.resignFirstResponder()
+        dateOfBirthText.resignFirstResponder()
+    }
     
     private func clearAllTextFields() {
         self.firstNameText.text = ""
