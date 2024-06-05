@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab4" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,18 +25,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zi3-ye-3rM">
                                 <rect key="frame" x="20" y="139.33333333333334" width="353" height="104.33333333333334"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iRB-Yl-mEH">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="iRB-Yl-mEH">
                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="104.33333333333333"/>
                                         <color key="backgroundColor" red="1" green="0.72325580349999996" blue="0.34565127410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iRB-Yl-mEH" secondAttribute="height" multiplier="1:1" id="ZyR-Ml-dYg"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4PQ-5m-YgN">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="4PQ-5m-YgN">
                                         <rect key="frame" x="124.33333333333334" y="0.0" width="104.33333333333334" height="104.33333333333333"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-WS-5uK">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image3" translatesAutoresizingMaskIntoConstraints="NO" id="DoW-WS-5uK">
                                         <rect key="frame" x="248.66666666666671" y="0.0" width="104.33333333333334" height="104.33333333333333"/>
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                     </imageView>
@@ -244,6 +244,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image1" width="500" height="334"/>
+        <image name="Image2" width="538" height="360"/>
+        <image name="Image3" width="539" height="360"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
