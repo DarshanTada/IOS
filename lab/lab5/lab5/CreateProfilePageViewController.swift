@@ -90,6 +90,16 @@ class CreateProfilePageViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is WelcomePageViewController {
+            let welcomePageViewController = segue.destination as? WelcomePageViewController
+            if(newUser != nil){
+                welcomePageViewController?.addUser(user: newUser!)
+            }
+        }
+    }
+    
     
     @IBAction func fullName(_ sender: UITextField) {
         if(checkForCharactersAndSpace(enteredString: fullNameText.text!)){
@@ -110,23 +120,11 @@ class CreateProfilePageViewController: UIViewController {
         phoneNumberText.resignFirstResponder();
     }
     
-//    func addNewUser(user : User){
-//        let newUser = User(username: user.username,password: user.password,fullName: user.fullName, mobileNumber: user.mobileNumber)
-////        print("here");
-//        usersList.append(newUser)
-//    }
+
     
     //to pass new user from one view to another
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.destination is WelcomePageViewController {
-            let welcomePageViewController = segue.destination as? WelcomePageViewController
-            if(newUser != nil){
-                welcomePageViewController?.addUser(user: newUser!)
-            }
-        }
-    }
+   
     
     
    

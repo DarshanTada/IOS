@@ -220,9 +220,6 @@
                                         <rect key="frame" x="103.33333333333333" y="0.0" width="249.66666666666669" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="UsernameText:" destination="RPD-Mv-R4K" eventType="editingDidEnd" id="oEb-27-pJ4"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -239,9 +236,6 @@
                                         <rect key="frame" x="98.333333333333329" y="0.0" width="254.66666666666669" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="passwordText:" destination="RPD-Mv-R4K" eventType="editingDidEnd" id="0b6-lU-ajY"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -259,8 +253,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="fullName:" destination="RPD-Mv-R4K" eventType="editingDidEnd" id="vfp-cY-Uvq"/>
-                                            <action selector="fullNameText:" destination="RPD-Mv-R4K" eventType="editingDidEnd" id="OfB-3X-o2u"/>
+                                            <action selector="fullName:" destination="RPD-Mv-R4K" eventType="editingChanged" id="Ft4-vI-BCN"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -279,14 +272,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="phoneNumber:" destination="RPD-Mv-R4K" eventType="editingDidEnd" id="6Ej-d1-9gf"/>
-                                            <action selector="phoneNumberText:" destination="RPD-Mv-R4K" eventType="editingDidEnd" id="Ux9-13-AjE"/>
+                                            <action selector="phoneNumber:" destination="RPD-Mv-R4K" eventType="editingChanged" id="1ki-A4-lcS"/>
                                         </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="159" translatesAutoresizingMaskIntoConstraints="NO" id="OLb-Us-qD9">
-                                <rect key="frame" x="39" y="612" width="315" height="34.333333333333258"/>
+                                <rect key="frame" x="39" y="612" width="315" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-ZH-Roa">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="34.333333333333336"/>
@@ -300,7 +292,9 @@
                                         <rect key="frame" x="237" y="0.0" width="78" height="34.333333333333336"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                            <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="submit:" destination="RPD-Mv-R4K" eventType="touchUpInside" id="oZk-6V-xJc"/>
                                         </connections>
@@ -309,7 +303,7 @@
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Vh-MC-W6x">
                                 <rect key="frame" x="20" y="442" width="353" height="93"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -319,20 +313,21 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="geJ-rq-eMK" firstAttribute="trailing" secondItem="pyi-ET-6UD" secondAttribute="trailing" constant="20" id="4J4-tN-zdK"/>
+                            <constraint firstItem="OLb-Us-qD9" firstAttribute="top" secondItem="9Vh-MC-W6x" secondAttribute="bottom" constant="77" id="4d7-Z2-1O6"/>
                             <constraint firstItem="geJ-rq-eMK" firstAttribute="trailing" secondItem="9Vh-MC-W6x" secondAttribute="trailing" constant="20" id="68A-Su-gjb"/>
                             <constraint firstItem="OG3-ba-P2e" firstAttribute="top" secondItem="pyi-ET-6UD" secondAttribute="bottom" constant="25" id="BmT-WB-cXB"/>
                             <constraint firstItem="pyi-ET-6UD" firstAttribute="top" secondItem="Rv3-4M-ziq" secondAttribute="bottom" constant="78.670000000000002" id="D7W-Oc-Sg9"/>
                             <constraint firstItem="9Vh-MC-W6x" firstAttribute="leading" secondItem="geJ-rq-eMK" secondAttribute="leading" constant="20" id="Epj-GR-Cpg"/>
                             <constraint firstItem="Wz2-Gv-XrT" firstAttribute="top" secondItem="JVR-Zg-Aal" secondAttribute="bottom" constant="25" id="KzK-L8-9Zo"/>
                             <constraint firstItem="pyi-ET-6UD" firstAttribute="leading" secondItem="geJ-rq-eMK" secondAttribute="leading" constant="20" id="Oyb-RE-rJ4"/>
+                            <constraint firstItem="OLb-Us-qD9" firstAttribute="leading" secondItem="geJ-rq-eMK" secondAttribute="leading" constant="39" id="PBJ-P6-S64"/>
                             <constraint firstItem="Rv3-4M-ziq" firstAttribute="top" secondItem="6u3-mK-bBD" secondAttribute="top" constant="99" id="RvT-lA-JZG"/>
                             <constraint firstItem="JVR-Zg-Aal" firstAttribute="top" secondItem="OG3-ba-P2e" secondAttribute="bottom" constant="25" id="YQZ-qt-3MX"/>
                             <constraint firstItem="pyi-ET-6UD" firstAttribute="centerX" secondItem="6u3-mK-bBD" secondAttribute="centerX" id="bJb-m6-LMu"/>
                             <constraint firstItem="geJ-rq-eMK" firstAttribute="trailing" secondItem="Wz2-Gv-XrT" secondAttribute="trailing" constant="20" id="buo-eB-m5K"/>
+                            <constraint firstItem="9Vh-MC-W6x" firstAttribute="top" secondItem="Wz2-Gv-XrT" secondAttribute="bottom" constant="33" id="eWY-ZQ-wub"/>
                             <constraint firstItem="geJ-rq-eMK" firstAttribute="trailing" secondItem="OG3-ba-P2e" secondAttribute="trailing" constant="20" id="f6t-ZI-cYy"/>
-                            <constraint firstItem="OLb-Us-qD9" firstAttribute="top" secondItem="9Vh-MC-W6x" secondAttribute="bottom" constant="77" id="g3j-Te-7V7"/>
                             <constraint firstItem="geJ-rq-eMK" firstAttribute="trailing" secondItem="JVR-Zg-Aal" secondAttribute="trailing" constant="20" id="jZw-rZ-dlw"/>
-                            <constraint firstItem="9Vh-MC-W6x" firstAttribute="top" secondItem="Wz2-Gv-XrT" secondAttribute="bottom" constant="25" id="kHV-kT-gNs"/>
                             <constraint firstItem="Rv3-4M-ziq" firstAttribute="centerX" secondItem="6u3-mK-bBD" secondAttribute="centerX" id="mSl-FU-jDe"/>
                             <constraint firstItem="JVR-Zg-Aal" firstAttribute="leading" secondItem="geJ-rq-eMK" secondAttribute="leading" constant="20" id="mcD-Is-gX3"/>
                             <constraint firstItem="OG3-ba-P2e" firstAttribute="leading" secondItem="geJ-rq-eMK" secondAttribute="leading" constant="20" id="pm3-QC-Tn5"/>
@@ -340,6 +335,7 @@
                             <constraint firstItem="Wz2-Gv-XrT" firstAttribute="leading" secondItem="geJ-rq-eMK" secondAttribute="leading" constant="20" id="wxb-Me-z0m"/>
                             <constraint firstItem="OG3-ba-P2e" firstAttribute="centerX" secondItem="6u3-mK-bBD" secondAttribute="centerX" id="yf3-EP-0CS"/>
                             <constraint firstItem="JVR-Zg-Aal" firstAttribute="centerX" secondItem="6u3-mK-bBD" secondAttribute="centerX" id="yrG-lm-3br"/>
+                            <constraint firstItem="geJ-rq-eMK" firstAttribute="trailing" secondItem="OLb-Us-qD9" secondAttribute="trailing" constant="39" id="zBu-sI-wTe"/>
                             <constraint firstItem="OLb-Us-qD9" firstAttribute="centerX" secondItem="6u3-mK-bBD" secondAttribute="centerX" id="zfv-hq-mDA"/>
                         </constraints>
                     </view>
@@ -813,16 +809,7 @@ Grateful for Hoot's help, Luna and Flicker gathered the moonbeams, but the brigh
                         <viewLayoutGuide key="safeArea" id="xXl-Dk-vwB"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5g0-7Z-VDN">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="YUd-cQ-Kpb">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="O1Y-kn-LrV">
-                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="5g0-7Z-VDN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9d-nG-Px4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -853,6 +840,9 @@ Grateful for Hoot's help, Luna and Flicker gathered the moonbeams, but the brigh
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
