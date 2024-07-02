@@ -9,11 +9,7 @@ import UIKit
 
 class CreateProfilePageViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        feedbackText.text = "All fields in the form are mandatory."
-    }
+   
     
     @IBOutlet weak var usernameText: UITextField!
     
@@ -32,6 +28,7 @@ class CreateProfilePageViewController: UIViewController {
     
     @IBOutlet weak var submit: UIButton!
     
+    @IBOutlet weak var login: UIButton!
     
     
     var usernameValue : String?
@@ -43,6 +40,13 @@ class CreateProfilePageViewController: UIViewController {
 //    var usersList : [User] = []
     //
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        login.isEnabled = true
+        feedbackText.text = "All fields in the form are mandatory."
+    }
+    
     
     
     
@@ -53,6 +57,7 @@ class CreateProfilePageViewController: UIViewController {
         self.phoneNumberText.text = ""
         clear.isEnabled = true
         submit.isEnabled = true
+        login.isHidden = true
    }
     
     
@@ -79,10 +84,12 @@ class CreateProfilePageViewController: UIViewController {
         if(checkMandatoryFields()){
             usernameValue = usernameText.text!
             passwordValue = passwordText.text!
-            newUser = User(username: usernameValue,password: passwordValue,fullName: fullNameValue,mobileNumber: mobileNumberValue)
+            newUser = User(username: usernameValue,password: passwordValue,fullName: fullNameText.text,mobileNumber: phoneNumberText.text)
             feedbackText.text = "Registration succesfull. Login to continue"
             clear.isEnabled = false
             submit.isEnabled = false
+            
+            print(usernameText.text!)
         }else{
             feedbackText.text = "All fields in the form are mandatory."
             clear.isEnabled = true
@@ -95,6 +102,7 @@ class CreateProfilePageViewController: UIViewController {
         if segue.destination is WelcomePageViewController {
             let welcomePageViewController = segue.destination as? WelcomePageViewController
             if(newUser != nil){
+                print("userrr???");
                 welcomePageViewController?.addUser(user: newUser!)
             }
         }

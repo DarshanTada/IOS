@@ -9,8 +9,14 @@ import UIKit
 
 class WelcomePageViewController: UIViewController {
 
+    var logout = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(logout == "yes"){
+            usernameTextField.text = ""
+            passwordTextField.text = ""
+        }
         let tom = User(username: "Tom", password: "qwert");
         let becky = User(username: "Becky", password: "poiuy");
         let sam = User(username: "Sam", password: "zxcv");

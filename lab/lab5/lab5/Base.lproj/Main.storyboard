@@ -13,7 +13,7 @@
             <objects>
                 <viewController storyboardIdentifier="welcomePage" id="BYZ-38-t0r" customClass="WelcomePageViewController" customModule="lab5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yga-fv-WWZ">
@@ -123,11 +123,11 @@
             <objects>
                 <viewController id="vHI-w7-GR2" customClass="ForgotPasswordPageViewController" customModule="lab5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QsH-hW-V0w">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXz-tY-0Sb">
-                                <rect key="frame" x="111.33333333333333" y="142" width="170.33333333333337" height="20.333333333333343"/>
+                                <rect key="frame" x="111.33333333333333" y="39" width="170.33333333333337" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -198,7 +198,7 @@
             <objects>
                 <viewController id="RPD-Mv-R4K" customClass="CreateProfilePageViewController" customModule="lab5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6u3-mK-bBD">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Profile Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rv3-4M-ziq">
@@ -308,6 +308,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLH-oM-I8r">
+                                <rect key="frame" x="150" y="783" width="66" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="gir-aw-AOh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="geJ-rq-eMK"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -342,8 +351,9 @@
                     <navigationItem key="navigationItem" id="Dzp-5W-ayW"/>
                     <connections>
                         <outlet property="clear" destination="f9M-ZH-Roa" id="7fC-rm-1bI"/>
-                        <outlet property="feedbackText" destination="9Vh-MC-W6x" id="Zge-cZ-kMP"/>
+                        <outlet property="feedbackText" destination="9Vh-MC-W6x" id="09u-M8-SyY"/>
                         <outlet property="fullNameText" destination="8D8-Be-vgy" id="Xl9-8e-T8a"/>
+                        <outlet property="login" destination="VLH-oM-I8r" id="oPo-GV-Nbe"/>
                         <outlet property="passwordText" destination="aTV-qo-Hpa" id="DNs-mT-40w"/>
                         <outlet property="phoneNumberText" destination="8rh-kA-9cV" id="Ntn-mD-B00"/>
                         <outlet property="submit" destination="jUO-m3-FqH" id="4aQ-l4-2UL"/>
@@ -429,8 +439,8 @@
                                 <items>
                                     <navigationItem title="Images" id="dmA-zg-KwE">
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="LLA-gi-3SZ">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2qW-Bp-YvG">
-                                                <rect key="frame" x="290" y="10.666666666666664" width="87" height="35"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="2qW-Bp-YvG">
+                                                <rect key="frame" x="290" y="11" width="87" height="34.333333333333336"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Logout">
@@ -470,7 +480,7 @@
             <objects>
                 <viewController id="Cg0-yb-FYL" customClass="StoriesViewController" customModule="lab5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UVz-Bk-QAe">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-xV-GfP">
@@ -518,8 +528,8 @@ Whiskers learned that true magic lies in helping others and using one's gifts wi
                     </view>
                     <navigationItem key="navigationItem" id="rIp-Rh-nOu">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="NXf-FI-7q9">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TsP-vQ-dKE">
-                                <rect key="frame" x="290" y="4.6666666666666679" width="87" height="35"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="TsP-vQ-dKE">
+                                <rect key="frame" x="290" y="11" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
@@ -539,7 +549,7 @@ Whiskers learned that true magic lies in helping others and using one's gifts wi
             <objects>
                 <viewController id="XkN-uc-l5S" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nmy-Zq-GoU">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Brave Little Dolphin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-mm-UI3">
@@ -572,8 +582,8 @@ From that day on, Splash was no longer afraid of the deep waters, knowing that b
                     </view>
                     <navigationItem key="navigationItem" id="d6f-XP-ucq">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="apR-1v-Pbi">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zXN-sl-i4F">
-                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zXN-sl-i4F">
+                                <rect key="frame" x="290" y="11" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
@@ -593,7 +603,7 @@ From that day on, Splash was no longer afraid of the deep waters, knowing that b
             <objects>
                 <viewController id="cWg-CD-G4T" customClass="Mixed1ViewController" customModule="lab5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="txE-DV-VBs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image7" translatesAutoresizingMaskIntoConstraints="NO" id="rlr-la-vHC">
@@ -640,8 +650,8 @@ From then on, Twinkle became a guiding light for lost travelers, spreading kindn
                     </view>
                     <navigationItem key="navigationItem" id="oZa-CS-KcU">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="5VX-S5-KW2">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PuQ-pg-6M6">
-                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PuQ-pg-6M6">
+                                <rect key="frame" x="290" y="11" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next">
@@ -663,7 +673,7 @@ From then on, Twinkle became a guiding light for lost travelers, spreading kindn
             <objects>
                 <viewController id="ztT-IK-lMk" customClass="Mixed2ViewController" customModule="lab5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Abc-fe-zgs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="1AM-oA-tCL" customClass="Mi">
@@ -725,7 +735,7 @@ From then on, Twinkle became a guiding light for lost travelers, spreading kindn
                     <tabBarItem key="tabBarItem" title="Mixed" id="RGn-xI-NcW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y11-9Z-P85">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -744,7 +754,7 @@ From then on, Twinkle became a guiding light for lost travelers, spreading kindn
                     <tabBarItem key="tabBarItem" title="Stories" id="Lg5-XX-pW9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qrd-6d-ROe">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -780,7 +790,7 @@ From then on, Twinkle became a guiding light for lost travelers, spreading kindn
             <objects>
                 <viewController id="nwk-lL-JJl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bA6-ST-SKX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luna and the Lost Moonbeam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN0-97-NJo">
@@ -816,6 +826,9 @@ Grateful for Hoot's help, Luna and Flicker gathered the moonbeams, but the brigh
             <point key="canvasLocation" x="4566" y="1501"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gir-aw-AOh"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <image name="Image" width="1038" height="584"/>
