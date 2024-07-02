@@ -13,6 +13,7 @@ class WelcomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         if(logout == "yes"){
             usernameTextField.text = ""
             passwordTextField.text = ""
@@ -27,16 +28,10 @@ class WelcomePageViewController: UIViewController {
         addUser(user: sam);
         addUser(user: james);
         addUser(user: sally);
-        
-        
     }
     
-    
+    // Array of all regiseterd users.
     var usersList : [User] = []
-
-  
-    
-   
     
     
     @IBOutlet weak var usernameTextField: UITextField!
@@ -44,20 +39,14 @@ class WelcomePageViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
-//    let users = [
-//           "Tom": "qwert",
-//           "Becky": "poiuy",
-//           "Sam": "zxcv",
-//           "James": "mnbv",
-//           "Sally": "98765"
-//       ]
-    
+    //funciton to add new user.
     func addUser(user : User){
         let newUser = User(username: user.username,password: user.password,fullName: user.fullName, mobileNumber: user.mobileNumber)
-//        print("here");
         usersList.append(newUser)
     }
     
+    
+    // pass the user list to the forgot password view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is ForgotPasswordPageViewController {
         let forgotPasswordPageViewController = segue.destination as? ForgotPasswordPageViewController
@@ -68,6 +57,7 @@ class WelcomePageViewController: UIViewController {
     
     @IBAction func onSubmitTapped(_ sender: UIButton) {
         
+        // check and allow user to login only if the username and password entered are verified.
         var validateUser = false;
         for user in usersList {
             if(user.username! == usernameTextField.text && user.password == passwordTextField.text){
@@ -91,24 +81,6 @@ class WelcomePageViewController: UIViewController {
             present(alert, animated: true, completion: nil)
         }
         
-        
-        
-//        let username = usernameTextField.text ?? ""
-//                let password = passwordTextField.text ?? ""
-//
-//        if let userPassword = users[username], userPassword == password {
-//                // Instantiate the UITabBarController with the identifier "homePage"
-//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                if let homePageTabBarController = storyboard.instantiateViewController(withIdentifier: "homePage") as? TabBarViewController {
-//
-//                    homePageTabBarController.modalPresentationStyle = .fullScreen
-//                    self.present(homePageTabBarController, animated: false, completion: nil)
-//                }
-//                } else {
-//                    let alert = UIAlertController(title: "Login Failed", message: "Invalid username or password.", preferredStyle: .alert)
-//                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                            present(alert, animated: true, completion: nil)
-//                }
     }
     
     

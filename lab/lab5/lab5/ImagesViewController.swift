@@ -32,24 +32,6 @@ class ImagesViewController: UIViewController {
                         alert.addAction(CancelAction)
                         self.present(alert, animated: true, completion: nil)
         
-        
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//              if let welcomeViewController = storyboard.instantiateViewController(withIdentifier: "welcomePage") as? WelcomePageViewController {
-//
-//                  // Set the welcomeViewController as the root view controller
-//                  if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-//                     let sceneDelegate = windowScene.delegate as? UIWindowSceneDelegate,
-//                     let window = sceneDelegate.window {
-//                      window?.rootViewController = welcomeViewController
-//
-//                      // Optionally add a transition animation
-//                      UIView.transition(with: window!,
-//                                        duration: 0.5,
-//                                        options: .transitionCrossDissolve,
-//                                        animations: nil,
-//                                        completion: nil)
-//                  }
-//              }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

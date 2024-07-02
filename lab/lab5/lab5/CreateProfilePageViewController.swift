@@ -30,35 +30,22 @@ class CreateProfilePageViewController: UIViewController {
     
     @IBOutlet weak var login: UIButton!
     
-    
+    // entered user details.
     var usernameValue : String?
     var passwordValue : String?
     var fullNameValue : String?
     var mobileNumberValue : String?
     var newUser : User?
     
-//    var usersList : [User] = []
-    //
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Do any additional setup after loading the view.
         login.isEnabled = true
         feedbackText.text = "All fields in the form are mandatory."
     }
     
-    
-    
-    
-    private func clearAllTextFields() {
-        self.usernameText.text = ""
-        self.passwordText.text = ""
-        self.fullNameText.text = ""
-        self.phoneNumberText.text = ""
-        clear.isEnabled = true
-        submit.isEnabled = true
-        login.isHidden = true
-   }
+   
     
     
     
@@ -66,6 +53,8 @@ class CreateProfilePageViewController: UIViewController {
         self.clearAllTextFields()
     }
     
+    // custom function to check for only character and spaces inputs for the entered string using a regular expression.
+    //reference : Google ->
     func checkForCharactersAndSpace(enteredString:String) -> Bool {
         do{
             let regex = try NSRegularExpression(pattern: ".*[^A-Za-z].*", options: [])
@@ -97,16 +86,6 @@ class CreateProfilePageViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.destination is WelcomePageViewController {
-            let welcomePageViewController = segue.destination as? WelcomePageViewController
-            if(newUser != nil){
-                print("userrr???");
-                welcomePageViewController?.addUser(user: newUser!)
-            }
-        }
-    }
     
     
     @IBAction func fullName(_ sender: UITextField) {
@@ -121,21 +100,38 @@ class CreateProfilePageViewController: UIViewController {
     @IBAction func phoneNumber(_ sender: UITextField) {
     }
     
+    
+    // tap gesture recogniser to dismiss keyboard.
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         usernameText.resignFirstResponder();
         passwordText.resignFirstResponder();
         fullNameText.resignFirstResponder();
         phoneNumberText.resignFirstResponder();
     }
-    
-
+   
+    //clear values
+    private func clearAllTextFields() {
+        self.usernameText.text = ""
+        self.passwordText.text = ""
+        self.fullNameText.text = ""
+        self.phoneNumberText.text = ""
+        clear.isEnabled = true
+        submit.isEnabled = true
+        login.isHidden = true
+   }
     
     //to pass new user from one view to another
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is WelcomePageViewController {
+            let welcomePageViewController = segue.destination as? WelcomePageViewController
+            if(newUser != nil){
+                print("userrr???");
+                welcomePageViewController?.addUser(user: newUser!)
+            }
+        }
+    }
 
-   
-    
-    
-   
     
     func checkForMobileNumber(enteredString:String) -> Bool {
         do{
@@ -149,6 +145,9 @@ class CreateProfilePageViewController: UIViewController {
             return false;
         }
     }
+    
+    
+    // function to check if all fields are filled by the user.
     
     func checkMandatoryFields() -> Bool {
         if((usernameText == nil || usernameText.text == "") || (passwordText == nil || passwordText.text == "") || (fullNameText == nil || fullNameText.text == "") || (phoneNumberText == nil || phoneNumberText.text == "")){
