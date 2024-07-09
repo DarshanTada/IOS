@@ -22,6 +22,8 @@ class TaskCreationVC: UIViewController {
     @IBOutlet weak var viewUploadImage: UIView!
     @IBOutlet weak var btnCreateTask: UIButton!
     
+    
+    
     //MARK: - Variable
     var arrColor = [TaskColor]()
     var selectedDate: Date?

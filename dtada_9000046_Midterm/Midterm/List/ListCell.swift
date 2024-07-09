@@ -47,37 +47,32 @@ class ListCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        
         // Reset any states before the cell is reused
     }
     
     // Configuring the cell with the task details
     func configureCell(objTask: Task) {
         self.lblTitle.text = objTask.title ?? ""
+//        print(lblTitle.text)
         self.lblDescription.text = objTask.taskDescription ?? ""
         
-        let dateValue = self.selectedTask?.strDate?.split(separator: "-")
-        self.lblDate.text = dateValue?[0].description
-        
-        self.lblMonthYear.text = ""
-        if let dateValue = self.selectedTask?.strDate?.split(separator: "-"), dateValue.count >= 3 {
-            self.lblDate.text = dateValue[0].description
-            self.lblMonthYear.text = "\(dateValue[1]) \(dateValue[2])"
+//        print(lblDate.text)
+
+        if let strDate = objTask.strDate {
+            let dateValue = strDate.split(separator: " ")
+            if dateValue.count >= 3 {
+                let date = dateValue[1].description.split(separator: ",")
+                self.lblDate.text = date[0].description
+                self.lblMonthYear.text = dateValue[0].description + " " + dateValue[2].description
+            } else {
+                self.lblDate.text = ""
+                self.lblMonthYear.text = ""
+            }
+        } else {
+            self.lblDate.text = ""
+            self.lblMonthYear.text = ""
         }
-        
-        
-//        if let strDate = objTask.strDate {
-//            let dateValue = strDate.split(separator: "-")
-//            if dateValue.count >= 3 {
-//                self.lblDate.text = dateValue[0].description
-//                self.lblMonthYear.text = dateValue[1].description + " " + dateValue[2].description
-//            } else {
-//                self.lblDate.text = ""
-//                self.lblMonthYear.text = ""
-//            }
-//        } else {
-//            self.lblDate.text = ""
-//            self.lblMonthYear.text = ""
-//        }
         
         self.lblStatus.text = objTask.status?.rawValue
         switch objTask.status {
@@ -85,8 +80,9 @@ class ListCell: UITableViewCell {
             self.lblStatus.textColor   = .red
             self.clipColor.backgroundColor = .red
         case .completed:
-            self.lblStatus.textColor = .green
-            self.clipColor.backgroundColor = .green
+            self.lblStatus.textColor = UIColor(red: 20/255, green: 150/255, blue: 20/255, alpha: 1)
+            self.clipColor.backgroundColor = UIColor(red: 20/255, green: 150/255, blue: 20/255, alpha: 1)
+
         case .ongoing:
             self.lblStatus.textColor = .orange
             self.clipColor.backgroundColor = .orange
