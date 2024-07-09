@@ -36,6 +36,7 @@ class CreateProfilePageViewController: UIViewController {
     var fullNameValue : String?
     var mobileNumberValue : String?
     var newUser : User?
+    // i made model yes
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +68,7 @@ class CreateProfilePageViewController: UIViewController {
             return false;
         }
     }
+
     
     
     @IBAction func submit(_ sender: UIButton) {
@@ -78,7 +80,7 @@ class CreateProfilePageViewController: UIViewController {
             clear.isEnabled = false
             submit.isEnabled = false
             
-            print(usernameText.text!)
+//            print(usernameText.text!)
         }else{
             feedbackText.text = "All fields in the form are mandatory."
             clear.isEnabled = true
@@ -108,7 +110,8 @@ class CreateProfilePageViewController: UIViewController {
         fullNameText.resignFirstResponder();
         phoneNumberText.resignFirstResponder();
     }
-   
+   // can you hear nme?
+//    i did bt i dont work smtime
     //clear values
     private func clearAllTextFields() {
         self.usernameText.text = ""
@@ -126,29 +129,14 @@ class CreateProfilePageViewController: UIViewController {
         if segue.destination is WelcomePageViewController {
             let welcomePageViewController = segue.destination as? WelcomePageViewController
             if(newUser != nil){
-                print("userrr???");
+//                print("userrr???");
                 welcomePageViewController?.addUser(user: newUser!)
             }
         }
     }
-
     
-    func checkForMobileNumber(enteredString:String) -> Bool {
-        do{
-            let regex = try NSRegularExpression(pattern: "w+",options: [])
-            if regex.firstMatch(in: enteredString, options: [], range: NSMakeRange(0, enteredString.count)) != nil {
-                return false;
-            }else{
-                return true;
-            }
-        }catch {
-            return false;
-        }
-    }
-    
-    
+    // yes, ok yeap thank you nope its all working
     // function to check if all fields are filled by the user.
-    
     func checkMandatoryFields() -> Bool {
         if((usernameText == nil || usernameText.text == "") || (passwordText == nil || passwordText.text == "") || (fullNameText == nil || fullNameText.text == "") || (phoneNumberText == nil || phoneNumberText.text == "")){
             feedbackText.text = "All fields in the form are mandatory.";
