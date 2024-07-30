@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Week10
+//  week10
 //
-//  Created by Admin on 7/18/24.
+//  Created by Admin on 2024-07-16.
 //
 
 import UIKit
