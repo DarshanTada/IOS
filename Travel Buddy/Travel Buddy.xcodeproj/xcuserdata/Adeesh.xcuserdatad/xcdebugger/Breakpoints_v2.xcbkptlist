@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1303906F-C306-4AE5-9703-1C890258E548"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CDAC9288-4F88-4FE6-B825-A1D55C2BA20D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripExpensesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "updateTotalExpenses()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CDAC9288-4F88-4FE6-B825-A1D55C2BA20D - 3b62c515ccb477ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Travel_Buddy.TripExpensesViewController.updateTotalExpenses() -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripExpensesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "CDAC9288-4F88-4FE6-B825-A1D55C2BA20D - 1b9f0c52dcd5c398"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Double, Travel_Buddy.Expense) -&gt; Swift.Double in Travel_Buddy.TripExpensesViewController.updateTotalExpenses() -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripExpensesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D752EB07-EC5B-44EC-82F9-820B51C8BF13"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripExpensesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "saveExpense()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "693F353C-5B23-4D41-8CBE-7C5A69BADEC8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripExpensesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "addExpenseButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7486B766-2682-4F61-A2D7-8771786FB99E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "fetchDestinationWeather(latitude:longitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7486B766-2682-4F61-A2D7-8771786FB99E - 702bd2b109d607e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "1607">
+               </Location>
+               <Location
+                  uuid = "7486B766-2682-4F61-A2D7-8771786FB99E - 702bd2b109d607c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "1739">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "960D7074-8B28-4B57-8707-45CB65BAD20B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
+            landmarkName = "fetchDestinationWeather(latitude:longitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "960D7074-8B28-4B57-8707-45CB65BAD20B - 702bd2b109d60701"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "1081">
+               </Location>
+               <Location
+                  uuid = "960D7074-8B28-4B57-8707-45CB65BAD20B - 702bd2b109d60701"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DC862D9-899B-45A8-AD6D-8E0C9DF0B534"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "fetchDestinationWeather(latitude:longitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6DC862D9-899B-45A8-AD6D-8E0C9DF0B534 - 702bd2b109d600e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+               <Location
+                  uuid = "6DC862D9-899B-45A8-AD6D-8E0C9DF0B534 - 702bd2b109d600be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "380">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63E64DDF-8C99-4AE7-8D33-FB75150EFE5E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "fetchDestinationWeather(latitude:longitude:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "63E64DDF-8C99-4AE7-8D33-FB75150EFE5E - 702bd2b109d601f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "63E64DDF-8C99-4AE7-8D33-FB75150EFE5E - 40a6a582eef30f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "951">
+               </Location>
+               <Location
+                  uuid = "63E64DDF-8C99-4AE7-8D33-FB75150EFE5E - 702bd2b109d60019"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchDestinationWeather(latitude: Swift.Double, longitude: Swift.Double) -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31A2BFA4-F478-4AF0-855D-E2A5C1862831"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "fetchWeather()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "31A2BFA4-F478-4AF0-855D-E2A5C1862831 - 64bd2b3927f885ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Travel_Buddy.TripDetailViewController.fetchWeather() -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "1134">
+               </Location>
+               <Location
+                  uuid = "31A2BFA4-F478-4AF0-855D-E2A5C1862831 - 64bd2b3927f88448"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Travel_Buddy.TripDetailViewController.fetchWeather() -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "1060">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D67A1AF1-0055-4538-8E50-9475DCD6460F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "fetchWeather()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "447D0DBE-EB02-465E-821F-F41D5CE0FE4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Travel Buddy/TripDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "fetchWeather()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "447D0DBE-EB02-465E-821F-F41D5CE0FE4E - 125d484c8d7eea4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchWeather() -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "1607">
+               </Location>
+               <Location
+                  uuid = "447D0DBE-EB02-465E-821F-F41D5CE0FE4E - 125d484c8d7eea2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Travel_Buddy.TripDetailViewController.fetchWeather() -&gt; ()"
+                  moduleName = "Travel Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Adeesh/Downloads/Travel%20Buddy%203/Travel%20Buddy/TripDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "1739">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
